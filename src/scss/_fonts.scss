@@ -6,4 +6,12 @@
 
 // 3 - voici l'écriture : @font-face{font-family: 'METTRE NOM VOULU'; src: url('../../public/fonts/CHOISIR-DOSSIER-FONT');}
 
-@font-face{font-family: 'titrepolice'; src: url('../../public/fonts/Courgette/Courgette-Regular.ttf');}
+@font-face{
+    font-family: 'titrepolice';
+    src: url('../fonts/Courgette/Courgette-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'textepolice';
+    src: url('../fonts/Ubuntu/Ubuntu-Regular.ttf')
+}

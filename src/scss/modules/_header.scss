@@ -3,7 +3,12 @@
         background-color: #B02939;
     }
 }
-
-// .back-sombre {
-//     filter: contrast(25%);
-// }
+.titre-site{
+    font-family: 'titrepolice';
+}
+.texte-site{
+    font-family:'textepolice';
+}
+.back-sombre {
+    filter: brightness(30%);
+}

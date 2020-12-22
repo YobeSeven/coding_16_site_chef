@@ -15,9 +15,9 @@
     <!-- src/scss/modules/_header.scss -->
     <header>
 
-        <div id="carouselExampleCaptions" class="carousel slide" class="position-relative " data-ride="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide" class="position-relative" data-ride="carousel">
 
-            <nav class="navbar position-absolute w-100 " style="z-index: 1;">
+            <nav class="navbar position-absolute w-100 pt-5 " style="z-index: 1;">
                 <div class="ml-6">
                     <ul class="d-flex list-unstyled border-top border-bottom">
                         <li class="nav-item">
@@ -54,9 +54,9 @@
             </nav>
             
             <div class="container position-absolute text-center mx-6 my-7" class="box-titre-carousel" style="z-index: 1;">
-                <h4 class="text-white" class="titre-carousel">Whatever your <span>occasion</span>, <span class="text-rougesite">taste</span> makes it one to remember ! </h4>
-                <button class="btn bg-white rounded-pill">PURCHASE THEME</button>
-                <a class="btn btn-rougesite rounded-pill" href="">LEARN MORE</a>
+                <h4 class="text-white" class="titre-site" >Whatever your <span>occasion</span>, <span class="text-rougesite">taste</span> makes it one to remember ! </h4>
+                <button class="btn bg-white rounded-pill" class="textepolice">PURCHASE THEME</button>
+                <a class="btn btn-rougesite rounded-pill" class="textepolice" href="">LEARN MORE</a>
             </div>
 
             <!-- L'indicateur de page carousel (non obligatoire) , + il y a de slide , + faudra rajouter de li-->
@@ -88,10 +88,12 @@
 
         </div>
 
-
     </header>
-    
+    <!-- FIN HEADER -->
+
     <!-- src/scss/_section.scss -->
+
+    <!-- SECTION MENU -->
     <section class="container my-5 text-center bg-white border position-relative">
 
         <img class="position-absolute" style="top: 0%; right: 0%;" src="./public/img/box-right-top.png" alt="">
@@ -99,26 +101,280 @@
         <img class="position-absolute" style="bottom: 0%; right: 0%;" src="./public/img/box-bottom_right.png" alt="">
         <img class="position-absolute" style="bottom: 0%; left: 0%;" src="./public/img/box-bottom-left.png" alt="">
 
-        <div class="">
-            <h3><span class="text-rougesite">OUR</span> Story</h3>
+
+        <div class="py-5 px-6">
+            <h3 class="titre-site"><span class="text-rougesite">OUR</span> Story</h3>
             <img src="./public/img/decoration_line.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellat recusandae illum repellendus facilis? Eos.</p>
+            <p class="texte-site">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel cupiditate a illo, dicta consequatur voluptatibus, tempore, eos dolorem delectus neque sed architecto eligendi id quo nobis vitae! Voluptate, tempora at.</p>
         </div>
 
-        <div class="">
-            <h3><span class="text-rougesite">OUR</span> Story</h3>
+        <div class="pt-5 px-6">
+            <h3 class="titre-site"><span class="text-rougesite">OUR</span> Menu List</h3>
             <img src="./public/img/decoration_line.png" alt="">
         </div>
+
         <div>
+            <div class="w-100">
 
+                <div class="row">
+
+                    <!-- Box - place pour le menu -->
+                    <div class="col-2 p-0">
+
+                        <!-- box - menu -->
+                        <div class="list-group" style="height: 200px ; width : 200px" id="list-tab" role="tablist">
+
+                            <a class="list-group-item list-group-item-action active " role="tab" data-toggle="list" aria-controls="breakfast" id="breakfast" href="#n1">
+                                <i class="fas fa-mug-hot" style="font-size: 50px;"></i> <br> Breakfast
+                            </a>    
+                            <a class="list-group-item list-group-item-action " role="tab" data-toggle="list" aria-controls="lunch" id="lunch" href="#n2">
+                                <i class="fas fa-hamburger" style="font-size: 50px;"></i> <br> Lunch
+                            </a>    
+                            <a class="list-group-item list-group-item-action " role="tab" data-toggle="list" aria-controls="snacks" id="snacks" href="#n3">
+                                <i class="fas fa-cookie-bite" style="font-size: 50px;"></i> <br> Snacks
+                            </a>    
+                            <a class="list-group-item list-group-item-action " role="tab" data-toggle="list" aria-controls="dinner" id="dinners" href="#n4">
+                                <i class="fas fa-mug-hot" style="font-size: 50px;"></i> <br> Dinner
+                            </a> 
+
+                        </div>
+
+                    </div>
+
+                    <!-- Box - place pour le contenant -->
+                    <div class="col-10 p-0 pb-7 ">
+                        
+                        <!-- Box- contenant -->
+                        <div class="tab-content">
+
+                            <!-- Div relier au Lien ( a ) -->
+                            <div class="tab-pane fade active show" role="tabpanel" aria-labelledby="breakfast" id="n1">
+
+                                <!-- A mettre aprÃ¨s la div relier au lien-->
+                                <div class="container row d-inline-flex">
+
+                                    <!-- Exemple simple d'un menu -->
+                                    <div class="col-6 d-flex align-items-center p-0 pb-2 border-bottom">
+                                        <div class="px-3">
+                                            <img class="img-thumbnail rounded-circle" src="./public/img/menu_image_1.jpg" alt="">
+                                        </div>
+                                        <div class="px-3" >
+                                            <p class="">TITRE MENU</p>
+                                            <p class="">DESCRIPTION</p>
+                                        </div>
+                                        <div class="px-3">
+                                            <span class="badge text-rougesite border bg-light">35$</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            
+                            <div class="tab-pane fade" role="tabpanel" aria-labelledby="lunch" id="n2">
+
+                                <div class="container row d-inline-flex">
+
+                                    <div class="col-6 d-flex align-items-center p-0 pb-2 border-bottom">
+                                        <div class="px-3">
+                                            <img class="img-thumbnail rounded-circle" src="./public/img/menu_image_1.jpg" alt="">
+                                        </div>
+                                        <div class="px-3" >
+                                            <p class="">TITRE MENU</p>
+                                            <p class="">DESCRIPTION</p>
+                                        </div>
+                                        <div class="px-3">
+                                            <span class="badge text-rougesite border bg-light">35$</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="tab-pane fade" role="tabpanel" aria-labelledby="snacks" id="n3">
+
+                                <div class="container row d-inline-flex">
+
+                                    <div class="col-6 d-flex align-items-center p-0 pb-2 border-bottom">
+                                        <div class="px-3">
+                                            <img class="img-thumbnail rounded-circle" src="./public/img/menu_image_1.jpg" alt="">
+                                        </div>
+                                        <div class="px-3" >
+                                            <p class="">TITRE MENU</p>
+                                            <p class="">DESCRIPTION</p>
+                                        </div>
+                                        <div class="px-3">
+                                            <span class="badge text-rougesite border bg-light">35$</span>
+                                        </div>
+                                    </div>
+
+                                </div>  
+
+                            </div>
+
+                            <div class="tab-pane fade" role="tabpanel" aria-labelledby="dinner" id="n4">
+
+                                <div class="container row d-inline-flex">
+                                    <div class="col-6 d-flex align-items-center p-0 pb-2 border-bottom">
+
+                                        <div class="px-3">
+                                            <img class="img-thumbnail rounded-circle" src="./public/img/menu_image_1.jpg" alt="">
+                                        </div>
+                                        <div class="px-3" >
+                                            <p class="">TITRE MENU</p>
+                                            <p class="">DESCRIPTION</p>
+                                        </div>
+                                        <div class="px-3">
+                                            <span class="badge text-rougesite border bg-light">35$</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>                        
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        <img class="mb-6" src="./public/img/decoration_line.png" alt="">
+
+    </section>
+    <!-- SECTION MENU FIN! -->
+
+    <!-- SECTION CHEF -->
+    <section class="text-center bg-noir" >
+
+        <div class="py-5">
+            <h3 class="titre-site text-white"><span class="text-rougesite">MEET</span> Our chef</h3>
+            <img src="./public/img/decoration_line.png" alt="">
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="mx-5">
+                <img src="./public/img/chef1.png" alt="">
+                <hr class="bg-white m-0">
+                <p class="text-white texte-site ">lorem ipsum</p>
+            </div>
+            <div class="mx-5">
+                <img src="./public/img/chef2.png" alt="">
+                <hr class="bg-white m-0">
+                <p class="text-white texte-site ">lorem ipsum</p>
+            </div>
+            <div class="mx-5">
+                <img src="./public/img/chef3.png" alt="">
+                <hr class="bg-white m-0">
+                <p class="text-white texte-site ">lorem ipsum</p>
+            </div>
+            <div class="mx-5">
+                <img src="./public/img/chef4.png" alt="">
+                <hr class="bg-white m-0">
+                <p class="text-white texte-site ">lorem ipsum</p>
+            </div>
         </div>
 
     </section>
+    <!-- SECTION CHEF FIN! -->
+
+    <!-- SECTION COMMANDE -->
+    <section class="container my-5 text-center bg-white border position-relative">
+
+        <img class="position-absolute" style="top: 0%; right: 0%;" src="./public/img/box-right-top-grey.png" alt="">
+        <img class="position-absolute" style="top: 0%; left: 0%;" src="./public/img/box-left-top-grey.png" alt="">
+        <img class="position-absolute" style="bottom: 0%; right: 0%;" src="./public/img/box-bottom_right-grey.png" alt="">
+        <img class="position-absolute" style="bottom: 0%; left: 0%;" src="./public/img/box-bottom-left-grey.png" alt="">
+
+        <div class="py-5">
+            <h1 class="text-noir titre-site"><span class="text-rougesite">Book</span> Your table</h1>
+            <img src="./public/img/decoration_line.png" alt="">
+        </div>
+        <div class="container text-center back-image-commande py-5 "  style="width: 75%;">
+            <p class="texte-site text-white">For any query please call us at : <span>+91-1234567890</span></p>
+            <div class="row">
+                <input class="col-6 rounded-pill py-3" type="text" placeholder="Enter Full Name" name="" id="">
+                <input class="col-6 rounded-pill py-3" type="email" placeholder="Enter Id" name="" id="">
+                <input class="col-6 rounded-pill py-3" type="number" placeholder="Phone Number" name="" id="">
+                <input class="col-6 rounded-pill py-3" type="number" placeholder="No Of Person" name="" id="">
+                <input class="col-6 rounded-pill py-3" type="date" placeholder="date" name="" id="">
+                <input class="col-6 rounded-pill py-3" type="datetime" placeholder="Time" name="" id="">
+                <select class="col-6 rounded-pill py-3" name="" id="selection">
+                    <option value="">Occasion</option>
+                    <option value="">Occasion</option>
+                    <option value="">Occasion</option>
+                </select>
+                <select class="col-6 rounded-pill py-3 "  name="" id="selection">
+                    <option value="">Cuisine</option>
+                    <option value="">Cuisine</option>
+                    <option value="">Cuisine</option>
+                </select>
+            </div>
+            <a class="btn btn-rougesite my-5" href="">Book Now</a>
+        </div>
+
+        <div class="py-5">
+            <h1 class="text-noir titre-site"><span class="text-rougesite">OUR</span> Blog</h1>
+            <img src="./public/img/decoration_line.png" alt="">
+        </div>
+
+        <div class="d-flex justify-content-around">
+            <div class="text-left">
+                <img class="img-thumbnail bg-light" src="./public/img/blog_img1.jpg" alt="">
+                <div class="ml-5 px-5">
+                    <p class="bg-rougesite">DATE/LIKE/COMMENT</p>
+                    <h4>TITRE</h4>
+                    <p>TEXTE</p>
+                </div>
+            </div>
+            <div class="text-left">
+                <img class="img-thumbnail bg-light" src="./public/img/blog_img1.jpg" alt="">
+                <div class="ml-5 px-5">
+                    <p class="bg-rougesite">DATE/LIKE/COMMENT</p>
+                    <h4>TITRE</h4>
+                    <p>TEXTE</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="text-center">
+
+        <div>
+            <h3><span>CLIENT</span> Testimonials</h3>
+            <img src="./public/img/decoration_line.png" alt="">
+        </div>
+
+        <div class="row">
+            <div class="d-flex justify-content-around col-6">
+                <div class="media d-flex flex-row row">
+                    <img class="rounded-circle col-6" src="./public/img/testimonial1.jpg" alt="">
+                    <div class="media-body pl-5 border w-50 col-6 ">
+                        <h5>titre</h5>
+                        <a class="text-rougesite" href="">Manager</a>
+                        <p>texte</p>
+                    </div>
+                </div>
+                <div class="media d-flex flex-row-reverse col-6">
+                    <img class="rounded-circle col-6" src="./public/img/testimonial1.jpg" alt="">
+                    <div class=" container pr-5 border w-50 col-6 ">
+                        <h5>titre</h5>
+                        <a class="text-rougesite" href="">Manager</a>
+                        <p>texte</p>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    <!-- SECTION COMMANDE FIN -->
 
 
     <!--src/scss/_footer.scss-->
     <footer>
-        
+
     </footer>
 
 
