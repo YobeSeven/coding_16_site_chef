@@ -6161,7 +6161,6 @@ readers do not read off random characters that represent icons */
   --light: #f8f9fa;
   --dark: #343a40;
   --rougesite: #B02939;
-  --noir: #0D0A08;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -7866,28 +7865,6 @@ pre code {
   background-color: #e2b0b7;
 }
 
-.table-noir,
-.table-noir > th,
-.table-noir > td {
-  background-color: #bbbaba;
-}
-
-.table-noir th,
-.table-noir td,
-.table-noir thead th,
-.table-noir tbody + tbody {
-  border-color: #81807f;
-}
-
-.table-hover .table-noir:hover {
-  background-color: #aeadad;
-}
-
-.table-hover .table-noir:hover > td,
-.table-hover .table-noir:hover > th {
-  background-color: #aeadad;
-}
-
 .table-active,
 .table-active > th,
 .table-active > td {
@@ -8826,43 +8803,6 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(188, 73, 87, 0.5);
 }
 
-.btn-noir {
-  color: #fff;
-  background-color: #0D0A08;
-  border-color: #0D0A08;
-}
-
-.btn-noir:hover {
-  color: #fff;
-  background-color: black;
-  border-color: black;
-}
-
-.btn-noir:focus, .btn-noir.focus {
-  color: #fff;
-  background-color: black;
-  border-color: black;
-  box-shadow: 0 0 0 0.2rem rgba(49, 47, 45, 0.5);
-}
-
-.btn-noir.disabled, .btn-noir:disabled {
-  color: #fff;
-  background-color: #0D0A08;
-  border-color: #0D0A08;
-}
-
-.btn-noir:not(:disabled):not(.disabled):active, .btn-noir:not(:disabled):not(.disabled).active,
-.show > .btn-noir.dropdown-toggle {
-  color: #fff;
-  background-color: black;
-  border-color: black;
-}
-
-.btn-noir:not(:disabled):not(.disabled):active:focus, .btn-noir:not(:disabled):not(.disabled).active:focus,
-.show > .btn-noir.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(49, 47, 45, 0.5);
-}
-
 .btn-outline-primary {
   color: #007bff;
   border-color: #007bff;
@@ -9149,38 +9089,6 @@ fieldset:disabled a.btn {
 .btn-outline-rougesite:not(:disabled):not(.disabled):active:focus, .btn-outline-rougesite:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-rougesite.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(176, 41, 57, 0.5);
-}
-
-.btn-outline-noir {
-  color: #0D0A08;
-  border-color: #0D0A08;
-}
-
-.btn-outline-noir:hover {
-  color: #fff;
-  background-color: #0D0A08;
-  border-color: #0D0A08;
-}
-
-.btn-outline-noir:focus, .btn-outline-noir.focus {
-  box-shadow: 0 0 0 0.2rem rgba(13, 10, 8, 0.5);
-}
-
-.btn-outline-noir.disabled, .btn-outline-noir:disabled {
-  color: #0D0A08;
-  background-color: transparent;
-}
-
-.btn-outline-noir:not(:disabled):not(.disabled):active, .btn-outline-noir:not(:disabled):not(.disabled).active,
-.show > .btn-outline-noir.dropdown-toggle {
-  color: #fff;
-  background-color: #0D0A08;
-  border-color: #0D0A08;
-}
-
-.btn-outline-noir:not(:disabled):not(.disabled):active:focus, .btn-outline-noir:not(:disabled):not(.disabled).active:focus,
-.show > .btn-outline-noir.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(13, 10, 8, 0.5);
 }
 
 .btn-link {
@@ -11253,21 +11161,6 @@ a.badge-rougesite:focus, a.badge-rougesite.focus {
   box-shadow: 0 0 0 0.2rem rgba(176, 41, 57, 0.5);
 }
 
-.badge-noir {
-  color: #fff;
-  background-color: #0D0A08;
-}
-
-a.badge-noir:hover, a.badge-noir:focus {
-  color: #fff;
-  background-color: black;
-}
-
-a.badge-noir:focus, a.badge-noir.focus {
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(13, 10, 8, 0.5);
-}
-
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
@@ -11440,20 +11333,6 @@ a.badge-noir:focus, a.badge-noir.focus {
 
 .alert-rougesite .alert-link {
   color: #320c10;
-}
-
-.alert-noir {
-  color: #070504;
-  background-color: #cfcece;
-  border-color: #bbbaba;
-}
-
-.alert-noir hr {
-  border-top-color: #aeadad;
-}
-
-.alert-noir .alert-link {
-  color: black;
 }
 
 @keyframes progress-bar-stripes {
@@ -11865,22 +11744,6 @@ a.badge-noir:focus, a.badge-noir.focus {
   color: #fff;
   background-color: #5c151e;
   border-color: #5c151e;
-}
-
-.list-group-item-noir {
-  color: #070504;
-  background-color: #bbbaba;
-}
-
-.list-group-item-noir.list-group-item-action:hover, .list-group-item-noir.list-group-item-action:focus {
-  color: #070504;
-  background-color: #aeadad;
-}
-
-.list-group-item-noir.list-group-item-action.active {
-  color: #fff;
-  background-color: #070504;
-  border-color: #070504;
 }
 
 .close {
@@ -12789,16 +12652,6 @@ button.bg-rougesite:focus {
   background-color: #871f2c !important;
 }
 
-.bg-noir {
-  background-color: #0D0A08 !important;
-}
-
-a.bg-noir:hover, a.bg-noir:focus,
-button.bg-noir:hover,
-button.bg-noir:focus {
-  background-color: black !important;
-}
-
 .bg-white {
   background-color: #fff !important;
 }
@@ -12881,10 +12734,6 @@ button.bg-noir:focus {
 
 .border-rougesite {
   border-color: #B02939 !important;
-}
-
-.border-noir {
-  border-color: #0D0A08 !important;
 }
 
 .border-white {
@@ -16569,14 +16418,6 @@ a.text-rougesite:hover, a.text-rougesite:focus {
   color: #721b25 !important;
 }
 
-.text-noir {
-  color: #0D0A08 !important;
-}
-
-a.text-noir:hover, a.text-noir:focus {
-  color: black !important;
-}
-
 .text-body {
   color: #212529 !important;
 }
@@ -16706,22 +16547,64 @@ body {
   background-image: url("../img/main_bg.jpg");
 }
 
-.navbar .nav-item:hover {
-  background-color: #B02939;
+body .back-image-commande {
+  background-image: url("../img/book_table_bg.jpg");
 }
 
-.titre-site {
+body .back-image-testimonials {
+  background-image: url("../img/testimonials_background.jpg");
+}
+
+body .back-image-chef {
+  background-image: url("../img/team_background.jpg");
+}
+
+body .titre-site {
   font-family: 'titrepolice';
 }
 
-.texte-site {
+body .texte-site {
   font-family: 'textepolice';
+}
+
+.navbar .nav-item:hover {
+  background-color: #B02939;
 }
 
 .back-sombre {
   filter: brightness(30%);
 }
 
-.back-image-commande {
-  background-image: url("../img/book_table_bg.jpg");
+.centrer-titre {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 375px) {
+  .centrer-titre {
+    margin-top: 10vh;
+  }
+}
+
+.retouche-bouton-menu {
+  border: none;
+  border-right: 2px grey solid;
+  border-bottom: 2px grey solid;
+}
+
+.retouche-bouton-menu i {
+  color: grey;
+}
+
+.retouche-bouton-menu:hover {
+  border-right: 5px #B02939 solid;
+}
+
+.retouche-bouton-menu:hover i {
+  color: #B02939;
+}
+
+.back-image-footer {
+  background-image: url("../img/footer_background.jpg");
 }

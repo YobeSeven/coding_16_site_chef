@@ -1,3 +1,17 @@
-.back-image-commande{
-    background-image: url('../img/book_table_bg.jpg');
+
+// HOVER
+.retouche-bouton-menu{
+    border: none;
+    border-right:2px grey solid;
+    border-bottom:2px grey solid ;
+        i{
+            color:grey;
+        }
+}
+.retouche-bouton-menu:hover{
+    border-right: 5px $rougesite solid ;
+
+    i{
+        color: $rougesite ;
+    }
 }

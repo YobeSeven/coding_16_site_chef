@@ -12,14 +12,22 @@
 
 <body>
 
-    <!-- src/scss/modules/_header.scss -->
-    <header>
+                                                <!-- src/scss/modules/_header.scss -->
+    <header class="position-relative overflow-hidden">
 
-        <div id="carouselExampleCaptions" class="carousel slide" class="position-relative" data-ride="carousel">
+        <div class="container-lg position-absolute text-center centrer-titre" style="z-index: 1;">
+            <h4 class="text-white titre-site" style="font-size: 50px ;">Whatever your <span>occasion</span>, <span class="text-rougesite">taste</span> makes it one to remember ! </h4>
+            <button class="btn bg-white rounded-pill texte-site" >PURCHASE THEME</button>
+            <a class="btn btn-rougesite rounded-pill texte-site" href="">LEARN MORE</a>
+        </div>
 
-            <nav class="navbar position-absolute w-100 pt-5 " style="z-index: 1;">
+        <div id="navbar-carousel" class="carousel slide" class="position-relative" data-ride="carousel">
+
+            <!-- Nav de base -->
+            <nav class="navbar position-absolute w-100 pt-5 " style="z-index: 1 ;">
+
                 <div class="ml-6">
-                    <ul class="d-flex list-unstyled border-top border-bottom">
+                    <ul class="d-lg-flex d-none border-top border-bottom list-unstyled  ">
                         <li class="nav-item">
                             <a class="nav-link btn text-white" href="">Home</a>
                         </li>
@@ -36,7 +44,7 @@
                 </div>
                 <div><img src="./public/img/logo.png" alt=""></div>
                 <div class="mr-6">
-                    <ul class="d-flex list-unstyled border-top border-bottom">
+                    <ul class="d-lg-flex d-none  border-top border-bottom list-unstyled ">
                         <li class="nav-item">
                             <a class="nav-link btn text-white" href="">Reservation</a>
                         </li>
@@ -53,120 +61,126 @@
                 </div>                
             </nav>
             
-            <div class="container position-absolute text-center mx-6 my-7" class="box-titre-carousel" style="z-index: 1;">
-                <h4 class="text-white" class="titre-site" >Whatever your <span>occasion</span>, <span class="text-rougesite">taste</span> makes it one to remember ! </h4>
-                <button class="btn bg-white rounded-pill" class="textepolice">PURCHASE THEME</button>
-                <a class="btn btn-rougesite rounded-pill" class="textepolice" href="">LEARN MORE</a>
-            </div>
 
             <!-- L'indicateur de page carousel (non obligatoire) , + il y a de slide , + faudra rajouter de li-->
             <ol class="carousel-indicators">
-                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                <li data-target="#navbar-carousel" data-slide-to="0" class="active" style="border-radius: 50%; height: 15px; width: 15px;"></li>
+                <li data-target="#navbar-carousel" data-slide-to="1" style="border-radius: 50%; height: 15px; width: 15px;"></li>
+                <li data-target="#navbar-carousel" data-slide-to="2" style="border-radius: 50%; height: 15px; width: 15px;"></li>
             </ol>
 
             <!-- Corps du Carousel -->
             <div class="carousel-inner">
 
                 <!-- Début de Carousel -->
-                <div class="carousel-item active">
-                    <img src="./public/img/banner1.jpg" class="back-sombre d-block w-100" alt="">
+                <div class="carousel-item active" style="height: 100vh ;">
+                    <img src="./public/img/banner1.jpg" class="d-block w-100 back-sombre" alt="">
                 </div>
 
                 <!-- Slide Carousel Classique -->
-                <div class="carousel-item">
-                    <img src="./public/img/banner1.jpg" class="back-sombre d-block w-100" alt="">
+                <div class="carousel-item" style="height: 100vh ;">
+                    <img src="./public/img/banner1.jpg" class="d-block w-100 back-sombre" alt="">
 
                 </div>
 
-                <div class="carousel-item">
-                    <img src="./public/img/banner1.jpg" class="back-sombre d-block w-100" alt="">
+                <div class="carousel-item" style="height: 100vh ;">
+                    <img src="./public/img/banner1.jpg" class="d-block w-100 back-sombre" alt="">
                 </div>
 
             </div>
 
         </div>
-
+        <div class="position-absolute d-flex" style="bottom: 0%;">
+            <img src="./public/img/bottom_decoration_img.png" alt="">
+            <img src="./public/img/bottom_decoration_img.png" alt="">
+            <img src="./public/img/bottom_decoration_img.png" alt="">
+            <img src="./public/img/bottom_decoration_img.png" alt="">
+            <img src="./public/img/bottom_decoration_img.png" alt="">
+            <img src="./public/img/bottom_decoration_img.png" alt="">
+            <img src="./public/img/bottom_decoration_img.png" alt="">
+            <img src="./public/img/bottom_decoration_img.png" alt="">
+            <img src="./public/img/bottom_decoration_img.png" alt="">
+            <img src="./public/img/bottom_decoration_img.png" alt="">
+            <img src="./public/img/bottom_decoration_img.png" alt="">
+            <img src="./public/img/bottom_decoration_img.png" alt="">
+            <img src="./public/img/bottom_decoration_img.png" alt="">
+            <img src="./public/img/bottom_decoration_img.png" alt="">
+            <img src="./public/img/bottom_decoration_img.png" alt="">
+            <img src="./public/img/bottom_decoration_img.png" alt="">
+        </div>
     </header>
-    <!-- FIN HEADER -->
 
-    <!-- src/scss/_section.scss -->
+                                                <!-- src/scss/_section.scss -->
 
-    <!-- SECTION MENU -->
-    <section class="container my-5 text-center bg-white border position-relative">
+    <!-- SECTION MENU ! -->
+    <section class="container-lg position-relative text-center border bg-white my-5">
 
-        <img class="position-absolute" style="top: 0%; right: 0%;" src="./public/img/box-right-top.png" alt="">
-        <img class="position-absolute" style="top: 0%; left: 0%;" src="./public/img/box-left-top.png" alt="">
-        <img class="position-absolute" style="bottom: 0%; right: 0%;" src="./public/img/box-bottom_right.png" alt="">
-        <img class="position-absolute" style="bottom: 0%; left: 0%;" src="./public/img/box-bottom-left.png" alt="">
+        <img class="position-absolute" style="top: 0% ; right: 0% ;" src="./public/img/box-right-top.png" alt="">
+        <img class="position-absolute" style="top: 0% ; left: 0% ;" src="./public/img/box-left-top.png" alt="">
+        <img class="position-absolute" style="bottom: 0% ; right: 0% ;" src="./public/img/box-bottom_right.png" alt="">
+        <img class="position-absolute" style="bottom: 0% ; left: 0% ;" src="./public/img/box-bottom-left.png" alt="">
 
 
-        <div class="py-5 px-6">
+        <div class="d-lg-flex flex-lg-column py-5">
             <h3 class="titre-site"><span class="text-rougesite">OUR</span> Story</h3>
-            <img src="./public/img/decoration_line.png" alt="">
-            <p class="texte-site">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel cupiditate a illo, dicta consequatur voluptatibus, tempore, eos dolorem delectus neque sed architecto eligendi id quo nobis vitae! Voluptate, tempora at.</p>
+            <div><img style="height : 8px;" src="./public/img/decoration_line.png" alt=""></div>
+            <p class="texte-site px-5">texte</p>
         </div>
 
-        <div class="pt-5 px-6">
+        <div class="d-lg-flex flex-lg-column py-5">
             <h3 class="titre-site"><span class="text-rougesite">OUR</span> Menu List</h3>
-            <img src="./public/img/decoration_line.png" alt="">
+            <div><img style="height : 8px;" src="./public/img/decoration_line.png" alt=""></div>
         </div>
 
         <div>
+
             <div class="w-100">
 
                 <div class="row">
 
-                    <!-- Box - place pour le menu -->
-                    <div class="col-2 p-0">
+                    <div class="col-lg-4 col-4 p-0">
 
-                        <!-- box - menu -->
-                        <div class="list-group" style="height: 200px ; width : 200px" id="list-tab" role="tablist">
+                        <div class="list-group" style="height: 200px ; width : 200px"  role="tablist" id="list-tab">
 
-                            <a class="list-group-item list-group-item-action active " role="tab" data-toggle="list" aria-controls="breakfast" id="breakfast" href="#n1">
-                                <i class="fas fa-mug-hot" style="font-size: 50px;"></i> <br> Breakfast
+                            <a class="list-group-item list-group-item-action bg-white text-dark active retouche-bouton-menu" role="tab" data-toggle="list" aria-controls="breakfast" id="breakfast" href="#n1">
+                                <i class="fas fa-mug-hot" style="font-size: 25px ;"></i> <br> Breakfast
                             </a>    
-                            <a class="list-group-item list-group-item-action " role="tab" data-toggle="list" aria-controls="lunch" id="lunch" href="#n2">
-                                <i class="fas fa-hamburger" style="font-size: 50px;"></i> <br> Lunch
+                            <a class="list-group-item list-group-item-action bg-white text-dark retouche-bouton-menu" role="tab" data-toggle="list" aria-controls="lunch" id="lunch" href="#n2">
+                                <i class="fas fa-hamburger" style="font-size: 25px ;"></i> <br> Lunch
                             </a>    
-                            <a class="list-group-item list-group-item-action " role="tab" data-toggle="list" aria-controls="snacks" id="snacks" href="#n3">
-                                <i class="fas fa-cookie-bite" style="font-size: 50px;"></i> <br> Snacks
+                            <a class="list-group-item list-group-item-action bg-white text-dark retouche-bouton-menu" role="tab" data-toggle="list" aria-controls="snacks" id="snacks" href="#n3">
+                                <i class="fas fa-cookie-bite" style="font-size: 25px ;"></i> <br> Snacks
                             </a>    
-                            <a class="list-group-item list-group-item-action " role="tab" data-toggle="list" aria-controls="dinner" id="dinners" href="#n4">
-                                <i class="fas fa-mug-hot" style="font-size: 50px;"></i> <br> Dinner
+                            <a class="list-group-item list-group-item-action bg-white text-dark retouche-bouton-menu" role="tab" data-toggle="list" aria-controls="dinner" id="dinners" href="#n4">
+                                <i class="fas fa-mug-hot" style="font-size: 25px ;"></i> <br> Dinner
                             </a> 
 
                         </div>
 
                     </div>
 
-                    <!-- Box - place pour le contenant -->
-                    <div class="col-10 p-0 pb-7 ">
+                    <div class="col-lg-8 col-8 p-0 pb-7 ">
                         
-                        <!-- Box- contenant -->
                         <div class="tab-content">
 
-                            <!-- Div relier au Lien ( a ) -->
                             <div class="tab-pane fade active show" role="tabpanel" aria-labelledby="breakfast" id="n1">
 
-                                <!-- A mettre aprÃ¨s la div relier au lien-->
                                 <div class="container row d-inline-flex">
 
-                                    <!-- Exemple simple d'un menu -->
-                                    <div class="col-6 d-flex align-items-center p-0 pb-2 border-bottom">
+                                    <div class="col-lg-6 col-12 d-flex align-items-center border-bottom p-0 pb-2">
                                         <div class="px-3">
                                             <img class="img-thumbnail rounded-circle" src="./public/img/menu_image_1.jpg" alt="">
                                         </div>
                                         <div class="px-3" >
-                                            <p class="">TITRE MENU</p>
-                                            <p class="">DESCRIPTION</p>
+                                            <p class="texte-site">TITRE MENU</p>
+                                            <p class="texte-site">DESCRIPTION</p>
                                         </div>
                                         <div class="px-3">
-                                            <span class="badge text-rougesite border bg-light">35$</span>
+                                            <span class="badge border text-rougesite bg-light">35$</span>
                                         </div>
                                     </div>
 
+                                    
                                 </div>
 
                             </div>
@@ -176,16 +190,16 @@
 
                                 <div class="container row d-inline-flex">
 
-                                    <div class="col-6 d-flex align-items-center p-0 pb-2 border-bottom">
+                                    <div class="col-lg-6 col-12 d-flex align-items-center border-bottom p-0 pb-2">
                                         <div class="px-3">
                                             <img class="img-thumbnail rounded-circle" src="./public/img/menu_image_1.jpg" alt="">
                                         </div>
                                         <div class="px-3" >
-                                            <p class="">TITRE MENU</p>
-                                            <p class="">DESCRIPTION</p>
+                                            <p class="texte-site">TITRE MENU</p>
+                                            <p class="texte-site">DESCRIPTION</p>
                                         </div>
                                         <div class="px-3">
-                                            <span class="badge text-rougesite border bg-light">35$</span>
+                                            <span class="badge border text-rougesite bg-light">35$</span>
                                         </div>
                                     </div>
 
@@ -197,16 +211,16 @@
 
                                 <div class="container row d-inline-flex">
 
-                                    <div class="col-6 d-flex align-items-center p-0 pb-2 border-bottom">
+                                    <div class="col-lg-6 col-12 d-flex align-items-center border-bottom p-0 pb-2">
                                         <div class="px-3">
                                             <img class="img-thumbnail rounded-circle" src="./public/img/menu_image_1.jpg" alt="">
                                         </div>
                                         <div class="px-3" >
-                                            <p class="">TITRE MENU</p>
-                                            <p class="">DESCRIPTION</p>
+                                            <p class="texte-site">TITRE MENU</p>
+                                            <p class="texte-site">DESCRIPTION</p>
                                         </div>
                                         <div class="px-3">
-                                            <span class="badge text-rougesite border bg-light">35$</span>
+                                            <span class="badge border text-rougesite bg-light">35$</span>
                                         </div>
                                     </div>
 
@@ -217,19 +231,17 @@
                             <div class="tab-pane fade" role="tabpanel" aria-labelledby="dinner" id="n4">
 
                                 <div class="container row d-inline-flex">
-                                    <div class="col-6 d-flex align-items-center p-0 pb-2 border-bottom">
-
+                                    <div class="col-lg-6 d-flex align-items-center border-bottom p-0 pb-2">
                                         <div class="px-3">
                                             <img class="img-thumbnail rounded-circle" src="./public/img/menu_image_1.jpg" alt="">
                                         </div>
                                         <div class="px-3" >
-                                            <p class="">TITRE MENU</p>
-                                            <p class="">DESCRIPTION</p>
+                                            <p class="texte-site">TITRE MENU</p>
+                                            <p class="texte-site">DESCRIPTION</p>
                                         </div>
                                         <div class="px-3">
-                                            <span class="badge text-rougesite border bg-light">35$</span>
+                                            <span class="badge border text-rougesite bg-light">35$</span>
                                         </div>
-
                                     </div>
 
                                 </div>                        
@@ -241,19 +253,20 @@
                 </div>
             </div>
 
-        <img class="mb-6" src="./public/img/decoration_line.png" alt="">
+        </div>    
+        <img class="mb-6" style="height: 8px;" src="./public/img/decoration_line.png" alt="">
 
     </section>
-    <!-- SECTION MENU FIN! -->
 
-    <!-- SECTION CHEF -->
-    <section class="text-center bg-noir" >
+    <!-- SECTION CHEF ! -->
+    <section class="text-center back-image-chef" >
 
-        <div class="py-5">
+        <div class="d-lg-flex flex-lg-column py-5">
             <h3 class="titre-site text-white"><span class="text-rougesite">MEET</span> Our chef</h3>
-            <img src="./public/img/decoration_line.png" alt="">
+            <div><img style="height: 8px;" src="./public/img/decoration_line.png" alt=""></div>
         </div>
-        <div class="d-flex justify-content-center">
+        <div class="d-lg-flex d-block justify-content-center ">
+
             <div class="mx-5">
                 <img src="./public/img/chef1.png" alt="">
                 <hr class="bg-white m-0">
@@ -274,112 +287,285 @@
                 <hr class="bg-white m-0">
                 <p class="text-white texte-site ">lorem ipsum</p>
             </div>
+
         </div>
 
     </section>
-    <!-- SECTION CHEF FIN! -->
 
-    <!-- SECTION COMMANDE -->
-    <section class="container my-5 text-center bg-white border position-relative">
+    <!-- SECTION COMMANDE ! -->
+    <section class="container-lg position-relative text-center bg-white border my-5 pb-6">
 
-        <img class="position-absolute" style="top: 0%; right: 0%;" src="./public/img/box-right-top-grey.png" alt="">
-        <img class="position-absolute" style="top: 0%; left: 0%;" src="./public/img/box-left-top-grey.png" alt="">
-        <img class="position-absolute" style="bottom: 0%; right: 0%;" src="./public/img/box-bottom_right-grey.png" alt="">
-        <img class="position-absolute" style="bottom: 0%; left: 0%;" src="./public/img/box-bottom-left-grey.png" alt="">
+        <img class="position-absolute" style="top: 0% ; right: 0% ;" src="./public/img/box-right-top-grey.png" alt="">
+        <img class="position-absolute" style="top: 0% ; left: 0% ;" src="./public/img/box-left-top-grey.png" alt="">
+        <img class="position-absolute" style="bottom: 0% ; right: 0% ;" src="./public/img/box-bottom_right-grey.png" alt="">
+        <img class="position-absolute" style="bottom: 0% ; left: 0% ;" src="./public/img/box-bottom-left-grey.png" alt="">
 
-        <div class="py-5">
-            <h1 class="text-noir titre-site"><span class="text-rougesite">Book</span> Your table</h1>
-            <img src="./public/img/decoration_line.png" alt="">
+        <div class="d-lg-flex flex-lg-column py-5">
+            <h3 class="text-noir titre-site"><span class="text-rougesite">Book</span> Your table</h3>
+            <div><img style="height: 8px;" src="./public/img/decoration_line.png" alt=""></div>
         </div>
-        <div class="container text-center back-image-commande py-5 "  style="width: 75%;">
-            <p class="texte-site text-white">For any query please call us at : <span>+91-1234567890</span></p>
+
+        <div class="container text-center back-image-commande py-5 "  style="width: 70% ;">
+
+            <p class="text-white texte-site">For any query please call us at : <span>+91-1234567890</span></p>
+
             <div class="row">
-                <input class="col-6 rounded-pill py-3" type="text" placeholder="Enter Full Name" name="" id="">
-                <input class="col-6 rounded-pill py-3" type="email" placeholder="Enter Id" name="" id="">
-                <input class="col-6 rounded-pill py-3" type="number" placeholder="Phone Number" name="" id="">
-                <input class="col-6 rounded-pill py-3" type="number" placeholder="No Of Person" name="" id="">
-                <input class="col-6 rounded-pill py-3" type="date" placeholder="date" name="" id="">
-                <input class="col-6 rounded-pill py-3" type="datetime" placeholder="Time" name="" id="">
-                <select class="col-6 rounded-pill py-3" name="" id="selection">
-                    <option value="">Occasion</option>
-                    <option value="">Occasion</option>
-                    <option value="">Occasion</option>
-                </select>
-                <select class="col-6 rounded-pill py-3 "  name="" id="selection">
-                    <option value="">Cuisine</option>
-                    <option value="">Cuisine</option>
-                    <option value="">Cuisine</option>
-                </select>
+
+                <div class="col-lg-6 col-sm-12 pt-3">
+                    <input class=" rounded-pill w-75 " type="text" placeholder="Enter Full Name" name="" id="">
+                </div>
+                <div class="col-lg-6 col-sm-12 pt-3">
+                    <input class=" rounded-pill w-75  " type="email" placeholder="Enter Id" name="" id="">    
+                </div>
+                <div class="col-lg-6 col-sm-12 pt-3">
+                    <input class=" rounded-pill w-75 " type="number" placeholder="Phone Number" name="" id="">
+                </div>
+                <div class="col-lg-6 col-sm-12 pt-3">
+                    <input class=" rounded-pill w-75  " type="number" placeholder="No Of Person" name="" id="">    
+                </div>
+                <div class="col-lg-6 col-sm-12 pt-3">
+                    <input class=" rounded-pill w-75 " type="date" placeholder="date" name="" id="">
+                </div>
+                <div class="col-lg-6 col-sm-12 pt-3">
+                    <input class=" rounded-pill w-75 " type="datetime" placeholder="Time" name="" id="">    
+                </div>
+
             </div>
-            <a class="btn btn-rougesite my-5" href="">Book Now</a>
+
+            <a class="btn btn-rougesite my-5" href="">Book Now</a> 
         </div>
 
-        <div class="py-5">
-            <h1 class="text-noir titre-site"><span class="text-rougesite">OUR</span> Blog</h1>
-            <img src="./public/img/decoration_line.png" alt="">
+        
+
+        <div class="d-lg-flex flex-lg-column py-5">
+            <h3 class="text-noir titre-site"><span class="text-rougesite">OUR</span> Blog</h3>
+            <div><img style="height: 8px;" src="./public/img/decoration_line.png" alt=""></div>
         </div>
 
-        <div class="d-flex justify-content-around">
-            <div class="text-left">
-                <img class="img-thumbnail bg-light" src="./public/img/blog_img1.jpg" alt="">
-                <div class="ml-5 px-5">
-                    <p class="bg-rougesite">DATE/LIKE/COMMENT</p>
-                    <h4>TITRE</h4>
-                    <p>TEXTE</p>
+        <div class="row text-left">
+
+            <div class="card col-lg-6 col-sm-12 border-0">
+
+                <img class="img-thumbnail border-rounded bg-light" src="./public/img/blog_img1.jpg" alt="">
+                <div class="card-body position-relative">
+                    <h4 class="card-title position-absolute bg-rougesite text-white texte-site py-1 px-1" style="width: 80% ; top:-20% ; left: 50% ; transform: translateX(-50%) ;">12 April 2017/20 Comment/35 Likes</h4>
+                    <h6 class="card-title font-weight-bold texte-site" style="padding-left: 7% ;">Premier plat</h6>
+                    <p class="card-text texte-site" style="padding-left: 7% ;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, sunt?</p>
                 </div>
+    
             </div>
-            <div class="text-left">
-                <img class="img-thumbnail bg-light" src="./public/img/blog_img1.jpg" alt="">
-                <div class="ml-5 px-5">
-                    <p class="bg-rougesite">DATE/LIKE/COMMENT</p>
-                    <h4>TITRE</h4>
-                    <p>TEXTE</p>
+            <div class="card col-lg-6 col-sm-12 border-0">
+
+                <img class="img-thumbnail border-rounded bg-light" src="./public/img/blog_img1.jpg" alt="">
+                <div class="card-body position-relative">
+                    <h4 class="card-title position-absolute bg-rougesite text-white texte-site py-1 px-1" style="width: 80% ; top:-20% ; left: 50% ; transform: translateX(-50%) ;">12 April 2017/20 Comment/35 Likes</h4>
+                    <h6 class="card-title font-weight-bold texte-site" style="padding-left: 7% ;">Premier plat</h6>
+                    <p class="card-text texte-site" style="padding-left: 7% ;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, sunt?</p>
                 </div>
+    
             </div>
+
         </div>
+        <a class="btn btn-rougesite rounded-pill my-5 py-2 px-3 texte-site" href="">KNOW MORE</a>
         
     </section>
 
-    <section class="text-center">
+    <!-- SECTION TESTIMONIALS ! -->
+    <section class="container-lg-fluid text-center text-white back-image-testimonials">
 
-        <div>
-            <h3><span>CLIENT</span> Testimonials</h3>
-            <img src="./public/img/decoration_line.png" alt="">
+        <div class="d-lg-flex flex-lg-column py-5">
+            <h3 class="titre-site"><span class="text-rougesite">CLIENT</span> Testimonials</h3>
+            <div><img style="height: 8px;" src="./public/img/decoration_line.png" alt=""></div>
         </div>
 
-        <div class="row">
-            <div class="d-flex justify-content-around col-6">
-                <div class="media d-flex flex-row row">
-                    <img class="rounded-circle col-6" src="./public/img/testimonial1.jpg" alt="">
-                    <div class="media-body pl-5 border w-50 col-6 ">
-                        <h5>titre</h5>
-                        <a class="text-rougesite" href="">Manager</a>
-                        <p>texte</p>
-                    </div>
+        <div class="d-lg-flex justify-content-between text-left">
+            <div class="d-lg-flex d-sm-block align-items-center py-5 px-5">
+                <div class="mr-3">
+                    <img class="rounded-circle" src="./public/img/testimonial1.jpg" alt="">
                 </div>
-                <div class="media d-flex flex-row-reverse col-6">
-                    <img class="rounded-circle col-6" src="./public/img/testimonial1.jpg" alt="">
-                    <div class=" container pr-5 border w-50 col-6 ">
-                        <h5>titre</h5>
-                        <a class="text-rougesite" href="">Manager</a>
-                        <p>texte</p>
-                    </div>
+                <div class="border texte-site py-3 pl-1 w-100" style="border-radius: 10px;">
+                    <h6>Titre</h6>
+                    <a class="text-rougesite" href="">Lien</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aliquid.</p>
                 </div>
             </div>
-    
+            <div class="d-lg-flex d-sm-block align-items-center py-5 px-5">
+                <div class="border text-site py-3 pl-1 w-100" style="border-radius: 10px;">
+                    <h6>Titre</h6>
+                    <a class="text-rougesite" href="">Lien</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, ipsa!</p>
+                </div>
+                <div class="ml-3">
+                    <img class="rounded-circle" src="./public/img/testimonial1.jpg" alt="">
+                </div>    
+            </div>
         </div>
     </section>
-    <!-- SECTION COMMANDE FIN -->
+
+    <!-- SECTION CONTACT ! -->
+    <section class="container-lg text-center py-5 ">
+        <div class="d-lg-flex flex-lg-column py-5">
+            <h3 class="titre-site"><span class="text-rougesite">OUR</span> Contact</h3>
+            <div><img style="height: 8px;" src="./public/img/decoration_line.png" alt=""></div>
+        </div>
+        <div class="container border bg-rougesite py-3 px-3 " style="width: 50% ; border-radius: 10px ;">
+            <div class="">
+                <a class="" href="">
+                    <i class="fas fa-map-marker-alt text-white" style="font-size: 35px ;"></i> <br>
+                    <p class="border-bottom px-5 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, eum?</p>
+                </a>    
+            </div>
+            <div>
+                <a href="">
+                    <i class="fas fa-phone-alt text-white" style="font-size: 35px ;"></i> <br>
+                    <p class="border-bottom px-5 text-white">+91-9876543210</p>
+                </a>    
+            </div>
+            <div>
+                <a href="">
+                    <i class="fas fa-envelope text-white" style="font-size: 35px ;"></i> <br>
+                    <p class="text-white">abc@abc.com</p>
+                </a>    
+            </div>
+        </div>
+    </section>
 
 
-    <!--src/scss/_footer.scss-->
-    <footer>
+                                                <!--src/scss/_footer.scss ! -->
+    <footer class="d-lg-flex back-image-footer text-white row m-0 position-relative overflow-hidden">
+
+        <div class="position-absolute d-flex" style="top: 0%;">
+            <img src="./public/img/footer_bottom_decoration_img.png" alt="">
+            <img src="./public/img/footer_bottom_decoration_img.png" alt="">
+            <img src="./public/img/footer_bottom_decoration_img.png" alt="">
+            <img src="./public/img/footer_bottom_decoration_img.png" alt="">
+            <img src="./public/img/footer_bottom_decoration_img.png" alt="">
+            <img src="./public/img/footer_bottom_decoration_img.png" alt="">
+            <img src="./public/img/footer_bottom_decoration_img.png" alt="">
+            <img src="./public/img/footer_bottom_decoration_img.png" alt="">
+            <img src="./public/img/footer_bottom_decoration_img.png" alt="">
+            <img src="./public/img/footer_bottom_decoration_img.png" alt="">
+            <img src="./public/img/footer_bottom_decoration_img.png" alt="">
+            <img src="./public/img/footer_bottom_decoration_img.png" alt="">
+            <img src="./public/img/footer_bottom_decoration_img.png" alt="">
+            <img src="./public/img/footer_bottom_decoration_img.png" alt="">
+            <img src="./public/img/footer_bottom_decoration_img.png" alt="">
+            <img src="./public/img/footer_bottom_decoration_img.png" alt="">
+
+        </div>
+
+        <div class="container-lg col-lg-4 col-12 py-5">
+
+            <h2 class="texte-site">ABOUT US</h2>
+            <p class="texte-site">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione maiores cumque quaerat sit laudantium voluptate possimus atque maxime iste repudiandae! Sequi dolores ipsum eos, id exercitationem soluta adipisci iste laborum?</p>
+            <ul class="d-flex list-unstyled">
+                <li class="px-4">
+                    <i class="fab fa-facebook-f" style="font-size: 30px;"></i>
+                </li>
+                <li class="px-4">
+                    <i class="fab fa-google-plus-g" style="font-size: 30px;"></i>
+                </li>
+                <li class="px-4">
+                    <i class="fab fa-pinterest-square" style="font-size: 30px;"></i>
+                </li>
+                <li class="px-4">
+                    <i class="fab fa-linkedin-in" style="font-size: 30px;"></i>
+                </li>
+                
+            </ul>
+
+        </div>
+
+        <div class="container-lg col-lg-4 col-12 py-5">
+
+            <h2 class="texte-site">INSTAGRAM</h2>
+
+            <div class="d-inline-flex py-3">
+
+                <div class="pr-3">
+                    <img src="./public/img/instragram_gallery_img1.jpg" alt="">
+                </div>
+                <div class="pr-3">
+                    <img src="./public/img/instragram_gallery_img1.jpg" alt="">
+                </div>
+                <div class="pr-3">
+                    <img src="./public/img/instragram_gallery_img1.jpg" alt="">
+                </div>
+                <div class="pr-3">
+                    <img src="./public/img/instragram_gallery_img1.jpg" alt="">
+                </div>
+
+            </div>
+            <div class="d-inline-flex py-3">
+
+                <div class="pr-3">
+                    <img src="./public/img/instragram_gallery_img1.jpg" alt="">
+                </div>
+                <div class="pr-3">
+                    <img src="./public/img/instragram_gallery_img1.jpg" alt="">
+                </div>
+                <div class="pr-3">
+                    <img src="./public/img/instragram_gallery_img1.jpg" alt="">
+                </div>
+                <div class="pr-3">
+                    <img src="./public/img/instragram_gallery_img1.jpg" alt="">
+                </div>
+
+            </div>
+            
+
+        </div>
+
+        <div class="container-lg col-lg-4 col-12 py-5 ">
+
+            <h2 class="texte-site">POPULAR TAGS</h2>
+            <div class="d-flex pt-3">
+
+                <div class="pr-3">
+                    <a class="btn btn-rougesite px-1" href="">Restaurant</a>
+                </div>
+                <div class="pr-3">
+                    <a class="btn btn-rougesite px-1" href="">Responsive Design</a>
+                </div>
+                <div class="pr-3">
+                    <a class="btn btn-rougesite px-1" href="">Hotel</a>
+                </div>
+
+            </div>
+            <div class="d-flex pt-3">
+
+                <div class="pr-3">
+                    <a class="btn btn-rougesite px-1" href="">Blog Section</a>
+                </div>
+                <div class="pr-3">
+                    <a class="btn btn-rougesite px-1" href="">SEO</a>
+                </div>
+                <div class="pr-3">
+                    <a class="btn btn-rougesite px-1" href="">Cuisine</a>
+                </div>
+
+            </div>
+            <div class="d-flex pt-3">
+
+                <div class="pr-3">
+                    <a class="btn btn-rougesite px-1" href="">Graphic</a>
+                </div>
+                <div class="pr-3">
+                    <a class="btn btn-rougesite px-1" href="">Food</a>
+                </div>
+
+            </div>
+            
+
+        </div>
+
+        <div class="bg-rougesite" style="width: 100% ; height: 75px ;"></div>
 
     </footer>
 
 
 
-    <!-- Mettre les scripts en non-commentaire après avoir télécharger Bootstrap et JQuery , voir terminal , étape 3 -->
+<!-- Mettre les scripts en non-commentaire après avoir télécharger Bootstrap et JQuery , voir terminal , étape 3 -->
 
                     <!-- JQuery à mettre en non-commentaire -->
 <script src="./node_modules/jquery/dist/jquery.js"></script>

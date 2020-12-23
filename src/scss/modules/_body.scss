@@ -1,4 +1,23 @@
 body{
     margin: 0;
     background-image: url('../img/main_bg.jpg');
+    
+    // BACKGROUND
+    .back-image-commande{
+        background-image: url('../img/book_table_bg.jpg');
+    }
+    .back-image-testimonials{
+        background-image: url('../img/testimonials_background.jpg');
+    }
+    .back-image-chef{
+        background-image: url('../img/team_background.jpg');
+    }
+
+    // FONT/POLICE
+    .titre-site{
+        font-family: 'titrepolice';
+    }
+    .texte-site{
+        font-family:'textepolice';
+    }
 }
